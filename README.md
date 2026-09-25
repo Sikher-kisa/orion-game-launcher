@@ -16,7 +16,8 @@
 - **Mesure des performances** : images par seconde réelles, 1 % et 0,1 % bas, ajustements proposés.
 - **Boutique** : prix le plus bas sur les boutiques officielles et agréées, actualisé toutes les douze minutes ; encart « marché gris » séparé avec ses risques.
 - **Jeux gratuits et envies** : cadeaux, week-ends gratuits, alertes de baisse de prix.
-- **Sauvegardes, stockage, manette, IA facultative.**
+- **Sauvegardes** (copie possible dans OneDrive, Google Drive ou Dropbox), **stockage, manette, IA facultative.**
+- **Mode discret en jeu, jeux possédés non installés, mises à jour automatiques, interface en anglais.**
 
 ## Installation
 
@@ -25,6 +26,12 @@
 3. Choisissez le dossier, validez. Aucun droit administrateur n'est demandé.
 
 L'empreinte SHA-256 de chaque version est indiquée dans ses notes de publication.
+
+Ensuite, ORION se met à jour tout seul : il propose chaque nouvelle version, vérifie son empreinte, puis redémarre. Vos données sont conservées.
+
+## Journal des versions
+
+Toutes les étapes depuis la première version : [CHANGELOG.md](CHANGELOG.md).
 
 ## Signaler un problème
 
