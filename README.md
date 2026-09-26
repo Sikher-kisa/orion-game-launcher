@@ -17,7 +17,8 @@
 - **Boutique** : prix le plus bas sur les boutiques officielles et agréées, actualisé toutes les douze minutes ; encart « marché gris » séparé avec ses risques.
 - **Jeux gratuits et envies** : cadeaux, week-ends gratuits, alertes de baisse de prix.
 - **Sauvegardes** (copie possible dans OneDrive, Google Drive ou Dropbox), **stockage, manette, IA facultative.**
-- **Mode discret en jeu, jeux possédés non installés, mises à jour automatiques, interface en anglais.**
+- **Mode discret en jeu, jeux possédés non installés, interface en anglais.**
+- **Mise à jour en un clic** : la version installée s'affiche en bas à gauche ; quand une nouvelle version sort, un clic l'installe (empreinte vérifiée, remplacement tout ou rien) et ORION redémarre.
 
 ## Installation
 
@@ -27,7 +28,7 @@
 
 L'empreinte SHA-256 de chaque version est indiquée dans ses notes de publication.
 
-Ensuite, ORION se met à jour tout seul : il propose chaque nouvelle version, vérifie son empreinte, puis redémarre. Vos données sont conservées.
+Ensuite, ORION se met à jour tout seul : l'encart en bas à gauche signale chaque nouvelle version, un clic la télécharge, vérifie son empreinte, l'installe puis redémarre ORION. Vos données sont conservées.
 
 ## Journal des versions
 

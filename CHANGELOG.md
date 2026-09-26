@@ -2,6 +2,12 @@
 
 ORION est en version d'essai : chaque version est testée sur une vraie machine de joueur avant de sortir. Les grandes étapes, de la plus récente à la première.
 
+## 1.7.2 — La version en bas à gauche, la mise à jour en un clic
+- La version installée s'affiche en bas à gauche. ORION surveille la page officielle du projet et l'encart s'allume quand une nouvelle version sort.
+- Un clic sur l'encart télécharge la nouvelle version, vérifie son empreinte, l'installe et redémarre ORION. La progression s'affiche sur place.
+- Plus de fenêtre de mise à jour à chaque démarrage : un rappel discret suffit. L'encart peut être masqué dans Réglages > Mises à jour.
+- Mise à jour tout ou rien : la nouvelle version est préparée à côté de l'ancienne, puis échangée d'un coup. Si c'est impossible, l'ancienne reste intacte et ORION redémarre dessus.
+
 ## 1.7 — Mises à jour automatiques, mode discret et bibliothèque complète
 - Mise à jour automatique : ORION vérifie les nouvelles versions, contrôle l'empreinte du fichier et s'installe en un clic.
 - Mode discret en jeu : pendant une partie, même lancée depuis Steam ou Epic, ORION met en pause ses tâches de fond. Le temps de jeu est aussi compté hors d'ORION.
