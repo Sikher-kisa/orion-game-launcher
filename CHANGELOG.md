@@ -2,6 +2,15 @@
 
 ORION est en version d'essai : chaque version est testée sur une vraie machine de joueur avant de sortir. Les grandes étapes, de la plus récente à la première.
 
+## 1.8 — Vos comptes, vos succès et ce que votre PC peut faire
+- Nouvelle page Comptes : Steam (connexion officielle), GOG et Xbox (connexions non officielles, signalées comme telles), dans une fenêtre intégrée. ORION ne voit jamais votre mot de passe : seul un jeton, chiffré par Windows, est gardé sur ce PC.
+- Profil de chaque plateforme : niveau, XP, badges, Gamerscore, tous les jeux du compte et leur temps de jeu.
+- Succès dans la fiche de chaque jeu : obtenus, manquants (les plus accessibles d'abord) et rareté mondiale.
+- Les jeux de vos comptes rejoignent la bibliothèque (non installés) et leur temps de jeu est repris.
+- Déplacer un jeu vers un autre disque (page Stockage) : copie vérifiée avant de libérer la place, le jeu reste visible pour son launcher. Retour sur le disque d'origine en un clic.
+- Ce que votre PC peut faire (page Ma machine) : note de la machine, jeux fluides en Ultra, Haute et Moyenne, images par seconde attendues et meilleure offre. Chaque résultat dit sa source : mesure sur votre PC, mesures de la communauté ou estimation prudente.
+- Ubisoft, Rockstar, Battle.net, Epic et EA : ce qui est possible et pourquoi, clairement affiché.
+
 ## 1.7.2 — La version en bas à gauche, la mise à jour en un clic
 - La version installée s'affiche en bas à gauche. ORION surveille la page officielle du projet et l'encart s'allume quand une nouvelle version sort.
 - Un clic sur l'encart télécharge la nouvelle version, vérifie son empreinte, l'installe et redémarre ORION. La progression s'affiche sur place.

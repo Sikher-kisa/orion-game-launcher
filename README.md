@@ -18,6 +18,9 @@
 - **Jeux gratuits et envies** : cadeaux, week-ends gratuits, alertes de baisse de prix.
 - **Sauvegardes** (copie possible dans OneDrive, Google Drive ou Dropbox), **stockage, manette, IA facultative.**
 - **Mode discret en jeu, jeux possédés non installés, interface en anglais.**
+- **Comptes Steam, GOG et Xbox** : connexion sur la page officielle dans une fenêtre intégrée (aucun mot de passe vu par ORION, jeton chiffré par Windows) ; profil, niveau, badges, succès obtenus et manquants avec leur rareté.
+- **Ce que votre PC peut faire** : jeux fluides en Ultra, Haute et Moyenne, avec la source de chaque résultat (mesuré, communauté ou estimation prudente).
+- **Déplacement des jeux entre disques**, copie vérifiée avant de libérer la place.
 - **Mise à jour en un clic** : la version installée s'affiche en bas à gauche ; quand une nouvelle version sort, un clic l'installe (empreinte vérifiée, remplacement tout ou rien) et ORION redémarre.
 
 ## Installation
