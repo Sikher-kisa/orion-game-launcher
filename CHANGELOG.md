@@ -2,6 +2,29 @@
 
 ORION est en version d'essai : chaque version est testée sur une vraie machine de joueur avant de sortir. Les grandes étapes, de la plus récente à la première.
 
+## 1.9.1 — Connexion GOG avec Google
+- Comptes : nouveau bouton « Se connecter avec mon navigateur » pour GOG. Google refuse les fenêtres intégrées aux applications ; la connexion se fait donc dans votre navigateur habituel, puis ORION reconnaît l'adresse de fin de connexion dès que vous la copiez.
+- Lecteur vidéo : la page de consentement de YouTube n'apparaît plus.
+- Boutique : les lots de formations n'apparaissent plus parmi les jeux ; la fiche affiche « Chargement » pendant la recherche.
+- Lien partenaire Kinguin ajouté (le prix ne change pas).
+- Conseils : plus de faux conseil sur le chipset AMD d'un PC Intel, ni sur les périphériques audio virtuels.
+
+## 1.9.0 — Une boutique, des fiches et des réglages entièrement repensés
+- Boutique repensée : « À la une » pour les gros jeux du moment, « Pour vous » avec des suggestions tirées de votre bibliothèque (jamais un jeu déjà possédé), grosses promos, plus bas historique, gratuits, et une recherche avec images.
+- Les jeux gratuits rejoignent la Boutique (onglet « Gratuits en ce moment »). Logiciels et formations sont masqués par défaut : case « Afficher les applications ».
+- Fiche de jeu repensée : Infos (studio, éditeur, sortie, genres, avis, succès), succès compacts, captures et vidéos dans un lecteur intégré (gameplay en français, lives, bande-annonce). Plus de prix ni de marché gris pour un jeu déjà possédé ; le lien Boutique reste là.
+- Nouveau profil « Recommandé » : le plus beau réglage qui tient environ 60 images par seconde sur votre PC, avec DLSS ou FSR quand le jeu le permet. Un curseur Performances ↔ Qualité pour ajuster.
+- Réglages fiables : état honnête (« Réglages appliqués : 12 sur 14 »), relus juste avant le lancement, fichiers en lecture seule respectés, et plus de confirmation à chaque partie.
+- Ma machine : « Ce que votre PC peut faire » en une seule liste claire, avec le niveau fluide de chaque jeu, les filtres Tous / Mes jeux / À acheter et le tri.
+- Conseils : analyse de tous les pilotes (graphique, chipset, réseau, audio, stockage, USB, Bluetooth) et des réglages Windows et matériel : mode Jeu, planification GPU, alimentation, fréquence d'écran, XMP/EXPO, mémoire en simple canal, disque plein, jeux sur disque dur, redémarrage en attente, fichier d'échange.
+- Stockage : « Sauvegarder sur un autre disque » (copie vérifiée, le jeu installé n'est jamais modifié, progression en %, restauration et suppression). « Recalculer » remesure vraiment. Les jeux déplacés avec l'ancienne fonction peuvent être ramenés.
+- Page Sorties : les grosses sorties toutes plateformes avec compte à rebours, renouvelées toutes seules d'après les jeux Steam les plus suivis ; la liste des sorties consoles est mise à jour en ligne.
+- Joueurs en ligne (Steam) dans la fiche des jeux en ligne, et valeur de la bibliothèque (prix actuels hors promotion, à titre d'information).
+- Comptes : connexion Xbox sans clé de sécurité (le mot de passe est proposé), connexion Google sur GOG mieux gérée, avec un message clair si Google refuse les fenêtres intégrées.
+- Titres reconnus sans tenir compte de la ponctuation (« RuneScape - Dragonwilds » = « RuneScape: Dragonwilds ») ; un jeu sans captures le dit au lieu de laisser un vide.
+- Fiabilité : relecture complète du code ; installation et mises à jour plus sûres (jamais dans un dossier existant, ORION toujours relancé, mise à jour reportée après la partie) ; base de données et réglages protégés contre les fichiers abîmés ; aucun secret dans le journal.
+- Liens partenaires sur certaines boutiques : le prix ne change pas, une petite commission finance ORION (désactivable dans Réglages).
+
 ## 1.8 — Vos comptes, vos succès et ce que votre PC peut faire
 - Nouvelle page Comptes : Steam (connexion officielle), GOG et Xbox (connexions non officielles, signalées comme telles), dans une fenêtre intégrée. ORION ne voit jamais votre mot de passe : seul un jeton, chiffré par Windows, est gardé sur ce PC.
 - Profil de chaque plateforme : niveau, XP, badges, Gamerscore, tous les jeux du compte et leur temps de jeu.

@@ -1,8 +1,8 @@
 # ORION Game Launcher
 
-**Launcher de jeux PC gratuit pour Windows.** ORION trouve tous les jeux installés sur la machine, où qu'ils soient, et les lance avec des réglages graphiques calculés pour votre carte, votre écran et ce que vous voulez faire de la partie.
+**Launcher de jeux PC gratuit pour Windows.** ORION réunit tous vos jeux, où qu'ils soient installés, et les lance avec des réglages graphiques calculés pour votre carte, votre écran et ce que vous voulez faire de la partie.
 
-🌐 **Site officiel : [orion-game-launcher.pages.dev](https://orion-game-launcher.pages.dev/)**
+🌐 **Site officiel : [orion-launcher.com](https://orion-launcher.com/)** · 📅 **[Calendrier des sorties](https://orion-launcher.com/sorties)**
 
 ⬇️ **[Télécharger la dernière version (Installateur-ORION.exe)](https://github.com/Sikher-kisa/orion-game-launcher/releases/latest/download/Installateur-ORION.exe)** · Windows 10 et 11, 64 bits
 
@@ -10,43 +10,28 @@
 
 ## Ce qui est déjà en place
 
-- **Détection des jeux** : Steam, Epic, GOG, Ubisoft Connect, EA app, Battle.net, Microsoft Store, Ankama, dossiers personnels. Doublons fusionnés, jeux désinstallés retirés automatiquement.
-- **Fiches de jeu** : jaquettes officielles, captures d'écran, temps de jeu, actualités traduites en français.
-- **Réglages calculés** : profils Esport, Détente et Photoréaliste adaptés à votre carte graphique et à votre écran, avec aperçu, confirmation, sauvegarde et restauration en un clic.
-- **Mesure des performances** : images par seconde réelles, 1 % et 0,1 % bas, ajustements proposés.
-- **Boutique** : prix le plus bas sur les boutiques officielles et agréées, actualisé toutes les douze minutes ; encart « marché gris » séparé avec ses risques.
-- **Jeux gratuits et envies** : cadeaux, week-ends gratuits, alertes de baisse de prix.
-- **Sauvegardes** (copie possible dans OneDrive, Google Drive ou Dropbox), **stockage, manette, IA facultative.**
-- **Mode discret en jeu, jeux possédés non installés, interface en anglais.**
-- **Comptes Steam, GOG et Xbox** : connexion sur la page officielle dans une fenêtre intégrée (aucun mot de passe vu par ORION, jeton chiffré par Windows) ; profil, niveau, badges, succès obtenus et manquants avec leur rareté.
-- **Ce que votre PC peut faire** : jeux fluides en Ultra, Haute et Moyenne, avec la source de chaque résultat (mesuré, communauté ou estimation prudente).
-- **Déplacement des jeux entre disques**, copie vérifiée avant de libérer la place.
-- **Mise à jour en un clic** : la version installée s'affiche en bas à gauche ; quand une nouvelle version sort, un clic l'installe (empreinte vérifiée, remplacement tout ou rien) et ORION redémarre.
+- **Bibliothèque unifiée** : Steam, Epic, GOG, Ubisoft Connect, EA app, Battle.net, Microsoft Store, Ankama et dossiers personnels. Doublons fusionnés, jeux désinstallés retirés automatiquement, valeur de la bibliothèque.
+- **Comptes Steam, GOG et Xbox** : connexion sur la page officielle (aucun mot de passe vu par ORION, jeton chiffré par Windows) ; profil, niveau, badges, succès obtenus et manquants avec leur rareté.
+- **Fiches de jeu** : studio, éditeur, avis, succès, captures, joueurs en ligne, et un lecteur vidéo intégré (gameplay en français, lives, bande-annonce).
+- **Réglages graphiques** : profil « Recommandé » calculé pour votre PC, profils Esport, Détente et Photoréaliste, avec aperçu, sauvegarde et restauration en un clic.
+- **Ma machine** : ce que votre PC peut faire, jeu par jeu, avec la source de chaque résultat (mesuré, communauté ou estimation prudente).
+- **Conseils** : analyse des pilotes (graphique, chipset, réseau, audio, stockage, USB, Bluetooth) et des réglages Windows qui freinent les jeux.
+- **Boutique** : gros jeux du moment, suggestions tirées de votre bibliothèque, prix le plus bas sur des boutiques officielles et agréées, jeux gratuits du moment.
+- **Sorties** : les grosses sorties toutes plateformes avec compte à rebours.
+- **Stockage** : sauvegarde d'un jeu sur un autre disque (copie vérifiée, restauration en un clic).
+- **Mesure des performances** : images par seconde réelles, 1 % et 0,1 % bas.
+- **Et aussi** : sauvegarde des parties, manette, mode discret en jeu, interface en français et en anglais, mise à jour en un clic.
+
+## Ce qu'ORION ne fait pas
+
+Pas de compte ORION, pas de publicité, pas de télémétrie : vos données restent sur votre PC. Certains liens de boutique sont des liens partenaires (le prix ne change pas, une petite commission finance le projet) ; ils se désactivent dans les Réglages.
 
 ## Installation
 
-1. Téléchargez `Installateur-ORION.exe` depuis la page [Releases](https://github.com/Sikher-kisa/orion-game-launcher/releases).
-2. Si Windows affiche « Windows a protégé votre ordinateur », cliquez sur **Informations complémentaires** puis **Exécuter quand même** : l'installateur n'est pas encore signé numériquement.
-3. Choisissez le dossier, validez. Aucun droit administrateur n'est demandé.
+1. Téléchargez `Installateur-ORION.exe` depuis la [dernière version](https://github.com/Sikher-kisa/orion-game-launcher/releases/latest).
+2. Lancez-le. Windows peut afficher « Windows a protégé votre ordinateur » car l'installateur n'est pas signé : cliquez sur « Informations complémentaires », puis « Exécuter quand même ».
+3. L'empreinte SHA-256 de chaque installateur est indiquée dans les notes de version et sur le site, pour vérifier le fichier téléchargé.
 
-L'empreinte SHA-256 de chaque version est indiquée dans ses notes de publication.
+## Un problème, une idée ?
 
-Ensuite, ORION se met à jour tout seul : l'encart en bas à gauche signale chaque nouvelle version, un clic la télécharge, vérifie son empreinte, l'installe puis redémarre ORION. Vos données sont conservées.
-
-## Journal des versions
-
-Toutes les étapes depuis la première version : [CHANGELOG.md](CHANGELOG.md).
-
-## Signaler un problème
-
-Ouvrez un ticket dans l'onglet [Issues](https://github.com/Sikher-kisa/orion-game-launcher/issues) en précisant la version d'ORION, le jeu concerné et ce qui s'est passé.
-
-## Financement
-
-ORION est gratuit, sans publicité, sans compte et sans télémétrie. Le projet vit uniquement de **dons libres** ([PayPal](https://paypal.me/FoxSikh)) et de **liens partenaires** vers certaines boutiques, qui ne changent ni le prix payé ni l'ordre des offres. Aucune contrepartie n'est demandée à l'utilisateur.
-
-## Comment c'est fait
-
-ORION est un projet **vibe codé** : développé en dialoguant avec Claude (Anthropic), qui propose l'architecture, écrit et teste le code, pendant que l'auteur fixe le cap et essaie chaque version. Python 3.13, PySide6 / Qt 6, architecture à plugins.
-
-Recettes de réglages partagées : [orion-recettes](https://github.com/Sikher-kisa/orion-recettes).
+Ouvrez un [ticket](https://github.com/Sikher-kisa/orion-game-launcher/issues). Le journal des versions est dans [CHANGELOG.md](CHANGELOG.md).
