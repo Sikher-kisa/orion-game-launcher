@@ -2,6 +2,14 @@
 
 ORION est en version d'essai : chaque version est testée sur une vraie machine de joueur avant de sortir. Les grandes étapes, de la plus récente à la première.
 
+## 1.9.3 — Les accents sont de retour
+- Toute l'interface affiche désormais les accents du français : menus, réglages, conseils, tuto et installateur.
+- Site : le lien « Faire un don » ouvre une petite fenêtre par-dessus la page (code QR et lien PayPal) au lieu de la remplacer.
+
+## 1.9.2 — Nouvelle adresse : orion-launcher.com
+- Le site d'ORION déménage sur orion-launcher.com : l'aide, les réglages et le calendrier des sorties pointent vers la nouvelle adresse.
+- Lien partenaire Gamesplanet, distributeur officiel (le prix ne change pas).
+
 ## 1.9.1 — Connexion GOG avec Google
 - Comptes : nouveau bouton « Se connecter avec mon navigateur » pour GOG. Google refuse les fenêtres intégrées aux applications ; la connexion se fait donc dans votre navigateur habituel, puis ORION reconnaît l'adresse de fin de connexion dès que vous la copiez.
 - Lecteur vidéo : la page de consentement de YouTube n'apparaît plus.
