@@ -2,6 +2,18 @@
 
 ORION est en version d'essai : chaque version est testée sur une vraie machine de joueur avant de sortir. Les grandes étapes, de la plus récente à la première.
 
+## 1.9.5 — Réglages : l'écran d'abord
+- Boutique : une colonne « Types de jeux » (FPS, MOBA, MMORPG, RTS, RPG, survie...). Dans chaque type, les plus gros jeux d'abord, puis une sélection au hasard qui change à chaque ouverture.
+- Boutique : sous chaque jeu, « Clés Steam moins chères » ouvre la recherche chez Instant Gaming et Kinguin, déjà filtrée sur les clés Steam Europe ou Global.
+- Vidéos : la bande-annonce passe en tête et démarre toute seule, son coupé. Réglable dans Réglages.
+- Deux propositions quand votre PC ne peut pas tout avoir : « Le plus d'images » (qualité réduite) ou « La plus belle image » (images réduites, jamais sous 60 par seconde). Un clic choisit, pour chaque jeu.
+- Avant la première partie d'un jeu qu'ORION ne peut pas régler, il conseille un tour dans les réglages et montre la liste.
+- Mesures partagées entre joueurs : si vous dites oui (ORION pose la question une fois), vos parties mesurées aident les joueurs équipés comme vous, et les leurs vous aident. Rien de personnel n'est envoyé ; le choix se change dans Réglages.
+- Quand ORION ne peut pas régler un jeu lui-même, la fiche du jeu propose « Voir les réglages » : la liste de ce qu'il faut choisir dans les menus du jeu, ligne par ligne, avec des mots simples. Chaque ligne se coche, et la liste se copie.
+- Profil « Recommandé » : ORION vise maintenant la fréquence de votre écran pour tous les jeux (144 images par seconde sur un écran 144 Hz), plus seulement 60. Si le matériel ne suit pas, il règle le jeu et la limite d'images sur le plus haut palier que votre PC tient. Chaque niveau du curseur (Basse, Moyenne, Haute, Ultra) est poussé au maximum d'images.
+- Signaler un problème : un seul bouton « Envoyer ». Plus besoin de compte ni de fichier à joindre ; le signalement arrive directement à l'équipe.
+- Corrections : les jeux installés hors Steam (Battle.net, Rockstar) retrouvent leur fiche, leurs images et leur bande-annonce ; le compteur « joueurs sur Steam » n'apparaît plus que pour les jeux Steam ; l'affiche de la sortie la plus attendue n'est plus tranchée sur grand écran ; la fenêtre « Comparer les boutiques » garde ses prix.
+
 ## 1.9.4 — Plus fluide, et une affiche pour GTA VI
 - Affiches : les jaquettes s'affichent une à une dès qu'elles arrivent, celles des jeux visibles en premier, au lieu d'attendre la fin du lot.
 - Bibliothèque : ouverture bien plus rapide, les jaquettes sont gardées à la taille des tuiles.
