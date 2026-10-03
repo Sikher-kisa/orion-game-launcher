@@ -2,6 +2,18 @@
 
 ORION est en version d'essai : chaque version est testée sur une vraie machine de joueur avant de sortir. Les grandes étapes, de la plus récente à la première.
 
+## 1.9.4 — Plus fluide, et une affiche pour GTA VI
+- Affiches : les jaquettes s'affichent une à une dès qu'elles arrivent, celles des jeux visibles en premier, au lieu d'attendre la fin du lot.
+- Bibliothèque : ouverture bien plus rapide, les jaquettes sont gardées à la taille des tuiles.
+- Molette : le défilement est plus ample et glissé, dans toutes les pages.
+- Boutique et Sorties allégées ; la recherche de la bibliothèque attend la fin de la frappe.
+- Accents : un titre de jeu n'est plus jamais modifié.
+- Premier lancement : la langue et le pays des prix sont pris sur Windows (anglais et dollars pour un joueur américain).
+- Prix : chaque montant s'affiche dans la devise du pays choisi ($, £, CHF...), et les jeux gratuits suivent le même pays.
+- Anglais : les textes venus de Steam (genres, descriptions, succès) arrivent en anglais.
+- Sorties : un jeu absent de Steam (GTA VI en tête) affiche maintenant son visuel officiel.
+- Sorties : une remarque peut accompagner une sortie. GTA VI ouvre le bal.
+
 ## 1.9.3 — Les accents sont de retour
 - Toute l'interface affiche désormais les accents du français : menus, réglages, conseils, tuto et installateur.
 - Site : le lien « Faire un don » ouvre une petite fenêtre par-dessus la page (code QR et lien PayPal) au lieu de la remplacer.
