@@ -2,6 +2,26 @@
 
 ORION est en version d'essai : chaque version est testée sur une vraie machine de joueur avant de sortir. Les grandes étapes, de la plus récente à la première.
 
+## 1.9.6 — Retouches et filtre des jeux pour adultes
+- Jeux réservés aux adultes : une seule règle pour toutes les boutiques et plateformes. Ni captures ni vidéos dans leur fiche, et plus aucune apparition dans la Boutique, les jeux gratuits, les Sorties et la recherche des Envies. Les jeux grand public classés 18 ans ne sont pas concernés.
+- Curseur des graphismes : un niveau plus léger n'affiche plus jamais moins d'images par seconde qu'un niveau plus lourd.
+- Moteur du jeu : il n'est reconnu que sur une signature sûre. Un jeu d'un autre moteur (Cyberpunk 2077 par exemple) n'est plus pris pour un jeu Unreal.
+- Les pages ne sautent plus toutes seules : la fiche d'un jeu s'ouvre en haut et y reste.
+- Petite fenêtre : la liste des sources défile au lieu de s'écraser.
+- Recherche de la bibliothèque : un mot court ne fait plus remonter de jeux sans rapport.
+- Captures d'écran : les flèches du clavier font défiler les images.
+- Toutes les fenêtres : boutons dans la langue d'ORION (« Oui », « Annuler », « Enregistrer »...) au lieu de l'anglais.
+- Bande-annonce terminée : retour à l'affiche du jeu au lieu d'une image noire.
+- Jeux gratuits et Ma machine : la recherche accepte les fautes de frappe et les sigles (gta, bg3).
+- Images par seconde : au-delà de 300, ORION écrit « plus de 300 » partout (fiche d'un jeu, guide des réglages, Ma machine).
+- Recherche de la Boutique : un jeu vendu seulement sur Steam n'est plus masqué comme une application.
+- Boutique : dans la fiche d'un jeu, les revendeurs de clés (Instant Gaming, Kinguin) ont leur propre bloc, sous les boutiques officielles et bien séparé d'elles. Le bouton « Clés Steam moins chères » disparaît.
+- Boutique : quand Kinguin vend la clé Steam du jeu moins cher que les boutiques officielles, chez un vendeur très bien noté, ORION affiche ce prix et ouvre directement la bonne fiche. Sinon : « Prix sur le site ».
+- Boutique : la fiche d'un jeu s'agrandit avec le nombre de boutiques, pour tout lire sans défiler.
+- Clés moins chères : le lien Kinguin écarte les offres « Account », le lien Instant Gaming ne montre plus que les clés PC.
+- Fermer une page ou ORION ne déclenche plus d'« erreur imprévue » : une action différée est abandonnée quand sa fenêtre n'existe plus.
+- Compteur anonyme, seulement si vous dites oui : ORION compte ses ouvertures, les pages utilisées et le nom de la boutique ouverte depuis une offre. Jamais le jeu, jamais rien de personnel. La question est posée une fois ; le choix se change dans Réglages.
+
 ## 1.9.5 — Réglages : l'écran d'abord
 - Boutique : une colonne « Types de jeux » (FPS, MOBA, MMORPG, RTS, RPG, survie...). Dans chaque type, les plus gros jeux d'abord, puis une sélection au hasard qui change à chaque ouverture.
 - Boutique : sous chaque jeu, « Clés Steam moins chères » ouvre la recherche chez Instant Gaming et Kinguin, déjà filtrée sur les clés Steam Europe ou Global.
