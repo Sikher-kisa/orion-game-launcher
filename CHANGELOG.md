@@ -2,6 +2,12 @@
 
 ORION est en version d'essai : chaque version est testée sur une vraie machine de joueur avant de sortir. Les grandes étapes, de la plus récente à la première.
 
+## 1.9.7 — Compteur et réglages de Cyberpunk 2077
+- Cyberpunk 2077 : ORION écrit désormais ses réglages (textures, ombres, reflets, brouillard, foule, ray tracing) au lieu de seulement vous guider. Il s'en tient aux valeurs que le jeu propose et ne touche ni à la définition, ni à DLSS, ni à vos effets de caméra.
+- Recettes partagées : elles sont de nouveau chargées sous Windows. Elles étaient écartées à tort, comme si elles avaient été modifiées.
+- Compteur anonyme : le service note désormais le pays et la région d'où vient chaque envoi, jamais la ville ni l'adresse. Le texte de la question ayant changé, elle est reposée une fois ; sans nouveau oui, plus rien n'est compté.
+- Aide : la page « Mes données partent-elles quelque part ? » précise que le prix d'un revendeur de clés passe par le service d'ORION, qui ne reçoit que le jeu demandé.
+
 ## 1.9.6 — Retouches et filtre des jeux pour adultes
 - Jeux réservés aux adultes : une seule règle pour toutes les boutiques et plateformes. Ni captures ni vidéos dans leur fiche, et plus aucune apparition dans la Boutique, les jeux gratuits, les Sorties et la recherche des Envies. Les jeux grand public classés 18 ans ne sont pas concernés.
 - Curseur des graphismes : un niveau plus léger n'affiche plus jamais moins d'images par seconde qu'un niveau plus lourd.
