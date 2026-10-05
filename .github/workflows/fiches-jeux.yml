@@ -1,0 +1,42 @@
+# Prepare les fiches des jeux pour les pages « /jeux » du site : jeux vendus
+# par Gamesplanet, notoriete et configuration requise relevees sur Steam.
+# Lance a la main avant une mise a jour du site (environ quarante minutes).
+# Le resultat va dans la branche « donnees-jeux » ; un passage interrompu
+# reprend ou il s'etait arrete.
+name: Fiches des jeux du site
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fiches-jeux
+  cancel-in-progress: false
+
+jobs:
+  fiches:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Reprendre les fiches precedentes
+        run: |
+          curl -fsSL -o ancien.json "https://raw.githubusercontent.com/${{ github.repository }}/donnees-jeux/fiches-jeux.json" || echo "Aucune fiche precedente."
+      - name: Relever les fiches
+        run: python outils/fiches_jeux.py fiches-jeux.json ancien.json
+      - name: Publier dans la branche donnees-jeux
+        run: |
+          mkdir publication
+          mv fiches-jeux.json publication/
+          cd publication
+          git init -q -b donnees-jeux
+          git config user.name "ORION (releve automatique)"
+          git config user.email "actions@users.noreply.github.com"
+          git add fiches-jeux.json
+          git commit -q -m "Fiches des jeux"
+          git push -q --force "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" donnees-jeux
