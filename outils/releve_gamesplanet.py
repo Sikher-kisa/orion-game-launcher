@@ -23,6 +23,7 @@ Aucune dependance : bibliotheque standard de Python seulement.
 from __future__ import annotations
 
 import json
+import os
 import re
 import sys
 import time
@@ -92,6 +93,21 @@ def construire(source, maintenant: float | None = None) -> dict:
             "devise": "EUR", "jeux": jeux}
 
 
+def fragments(document: dict) -> dict[str, dict]:
+    """Le meme releve decoupe en cent petits fichiers, ranges par numero Steam
+    modulo 100 : une page du site ne lit que celui de son jeu (quelques
+    kilo-octets). Les pages sont en francais : seuls les produits vendus en
+    France y figurent, sans leurs listes de pays."""
+    parts: dict[str, dict] = {f"{i:02d}": {} for i in range(100)}
+    for appid, produits in document["jeux"].items():
+        vendus = [p[:5] for p in produits
+                  if (not p[5] or "FR" in p[5].split(",")) and "FR" not in p[6].split(",")]
+        if vendus:
+            parts[f"{int(appid) % 100:02d}"][appid] = vendus
+    return {cle: {"v": 1, "releve": document["releve"], "jeux": jeux}
+            for cle, jeux in parts.items()}
+
+
 def main(sortie: str) -> int:
     requete = urllib.request.Request(FLUX, headers={"User-Agent": AGENT})
     with urllib.request.urlopen(requete, timeout=120) as reponse:
@@ -102,7 +118,12 @@ def main(sortie: str) -> int:
         return 1
     with open(sortie, "w", encoding="utf-8") as f:
         json.dump(document, f, ensure_ascii=False, separators=(",", ":"))
-    print(f"{len(document['jeux'])} jeux, {n} produits.")
+    dossier = os.path.join(os.path.dirname(os.path.abspath(sortie)), "prix")
+    os.makedirs(dossier, exist_ok=True)
+    for cle, fragment in fragments(document).items():
+        with open(os.path.join(dossier, cle + ".json"), "w", encoding="utf-8") as f:
+            json.dump(fragment, f, ensure_ascii=False, separators=(",", ":"))
+    print(f"{len(document['jeux'])} jeux, {n} produits, 100 fragments.")
     return 0
 
 
