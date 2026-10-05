@@ -2,6 +2,10 @@
 
 ORION est en version d'essai : chaque version est testée sur une vraie machine de joueur avant de sortir. Les grandes étapes, de la plus récente à la première.
 
+## 1.9.8 — Cyberpunk à la bonne taille
+- Cyberpunk 2077 : ORION met aussi le jeu à la définition de votre écran et choisit le mode d'affichage. Avant, le jeu pouvait garder une ancienne définition plus grande que l'écran : l'image débordait sur le second écran.
+- Cyberpunk 2077 : avec une carte NVIDIA, ORION règle aussi le niveau de DLSS selon le profil choisi.
+
 ## 1.9.7 — Compteur et réglages de Cyberpunk 2077
 - Cyberpunk 2077 : ORION écrit désormais ses réglages (textures, ombres, reflets, brouillard, foule, ray tracing) au lieu de seulement vous guider. Il s'en tient aux valeurs que le jeu propose et ne touche ni à la définition, ni à DLSS, ni à vos effets de caméra.
 - Recettes partagées : elles sont de nouveau chargées sous Windows. Elles étaient écartées à tort, comme si elles avaient été modifiées.
