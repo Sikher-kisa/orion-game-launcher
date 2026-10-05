@@ -93,17 +93,24 @@ def construire(source, maintenant: float | None = None) -> dict:
             "devise": "EUR", "jeux": jeux}
 
 
+def cle_fragment(appid) -> str:
+    """Fichier « prix/NN.json » d'un jeu : dizaines et centaines de son numero."""
+    return f"{(int(appid) // 10) % 100:02d}"
+
+
 def fragments(document: dict) -> dict[str, dict]:
-    """Le meme releve decoupe en cent petits fichiers, ranges par numero Steam
-    modulo 100 : une page du site ne lit que celui de son jeu (quelques
-    kilo-octets). Les pages sont en francais : seuls les produits vendus en
-    France y figurent, sans leurs listes de pays."""
+    """Le meme releve decoupe en cent petits fichiers : une page du site ne
+    lit que celui de son jeu (quelques kilo-octets). Les numeros Steam se
+    terminent presque tous par zero : c'est le chiffre des dizaines et celui
+    des centaines qui rangent un jeu (`cle_fragment`). Les pages sont en
+    francais : seuls les produits vendus en France y figurent, sans leurs
+    listes de pays."""
     parts: dict[str, dict] = {f"{i:02d}": {} for i in range(100)}
     for appid, produits in document["jeux"].items():
         vendus = [p[:5] for p in produits
                   if (not p[5] or "FR" in p[5].split(",")) and "FR" not in p[6].split(",")]
         if vendus:
-            parts[f"{int(appid) % 100:02d}"][appid] = vendus
+            parts[cle_fragment(appid)][appid] = vendus
     return {cle: {"v": 1, "releve": document["releve"], "jeux": jeux}
             for cle, jeux in parts.items()}
 
