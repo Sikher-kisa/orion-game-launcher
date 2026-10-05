@@ -1,0 +1,39 @@
+# Releve les prix de Gamesplanet toutes les vingt minutes et les publie dans
+# la branche « donnees » (un seul fichier, un seul commit remplace a chaque
+# fois). ORION lit ce fichier : aucun PC de joueur n'interroge Gamesplanet.
+name: Prix Gamesplanet
+
+on:
+  schedule:
+    - cron: "7,27,47 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: prix-gamesplanet
+  cancel-in-progress: false
+
+jobs:
+  releve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Relever le flux
+        run: python outils/releve_gamesplanet.py gamesplanet-fr.json
+      - name: Publier dans la branche donnees
+        run: |
+          mkdir publication
+          mv gamesplanet-fr.json publication/
+          cd publication
+          git init -q -b donnees
+          git config user.name "ORION (releve automatique)"
+          git config user.email "actions@users.noreply.github.com"
+          git add gamesplanet-fr.json
+          git commit -q -m "Prix Gamesplanet"
+          git push -q --force "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" donnees
