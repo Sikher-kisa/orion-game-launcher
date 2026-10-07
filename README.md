@@ -6,8 +6,6 @@
 
 ⬇️ **[Télécharger la dernière version (Installateur-ORION.exe)](https://github.com/Sikher-kisa/orion-game-launcher/releases/latest/download/Installateur-ORION.exe)** · Windows 10 et 11, 64 bits
 
-> **Version d'essai.** ORION est en phase de test ouverte : tout fonctionne, mais tout peut encore bouger. Des mises à jour arrivent régulièrement, et vos retours décident des prochaines.
-
 ## Ce qui est déjà en place
 
 - **Bibliothèque unifiée** : Steam, Epic, GOG, Ubisoft Connect, EA app, Battle.net, Microsoft Store, Ankama et dossiers personnels. Doublons fusionnés, jeux désinstallés retirés automatiquement, valeur de la bibliothèque.
