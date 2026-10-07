@@ -2,6 +2,13 @@
 
 Chaque version d'ORION est testée sur une vraie machine de joueur avant de sortir. Les grandes étapes, de la plus récente à la première.
 
+## 2.0.1 — Bilan de fluidité anonyme, navigateurs jamais pris pour des jeux
+- Correctif (signalement n° 4) : un navigateur installé dans un dossier « Games » (Opera, Chrome, Firefox, Edge, Brave, Vivaldi) ou un logiciel toujours ouvert (Discord, Spotify, OBS, VLC, Telegram…) pouvait être pris pour un jeu par le scanner des programmes installés ; ORION se mettait alors en retrait « jusqu'à la fin de la partie », c'est-à-dire pour toujours, et reportait ses mises à jour. Ces programmes ne sont plus jamais des jeux, ni dans la bibliothèque, ni pour le mode discret.
+- Mesure des images par seconde sur les jeux Unreal (Aniimo, et tous ceux dont l'exécutable à la racine n'est qu'une amorce) : ORION suit et mesure le vrai programme de rendu ; une mesure sans résultat est dite dans le journal.
+- Le rapport joint à un signalement donne la mémoire vidéo et les écrans (au lieu de « ? »).
+- Une extinction ou une déconnexion de Windows pendant qu'ORION tourne (même caché) ne fait plus parler d'« arrêt brutal » au démarrage suivant.
+- Fluidité : à la fermeture, ORION envoie un bilan anonyme de la session, si vous avez dit oui au partage : combien de fois l'affichage s'est figé, le nom de la fonction d'ORION en cause, le temps de démarrage et le nombre d'erreurs du journal. Jamais le jeu, jamais un chemin de fichier. C'est ce qui permet de corriger les accrochages qui ne se reproduisent pas sur la machine de l'auteur. La question de partage, dont le texte change, est reposée une fois ; sans nouveau oui, plus rien n'est compté.
+
 ## 2.0.0 — Les DLC de vos jeux, les vrais prix de Gamesplanet, Loaded et les alertes de baisse
 - Ma machine : la lecture de votre PC. Carte graphique, processeur, mémoire vidéo et mémoire vive ont chacun leur verdict, tiré des jeux évalués : combien de jeux chacun retient sous le niveau Haute, et lequel est le premier frein de la machine. Chaque composant est comparé à ses équivalents.
 - Ma machine : un clic sur un jeu explique son niveau. Sa configuration demandée face à la vôtre, composant par composant ; ce qui le rend jouable sans rien acheter (DLSS, FSR ou XeSS en mode Qualité, définition d'affichage inférieure) ; et ce qu'il manquerait pour le niveau au-dessus. Le filtre « Rattrapables » liste les jeux qu'un simple réglage ferait monter d'un niveau.
